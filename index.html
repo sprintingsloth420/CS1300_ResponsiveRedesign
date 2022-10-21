@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Responsive Redesign</title>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <!-- page content goes into <body> -->
+  <body class = "body">
+    <div class="header1">
+      <h1>Responsive Redesign - </h1>  <h1 id = "normaltitle">Restaurant Homepage</h1>
+    </div>
+
+    <div class="text">
+      <p>In this project, I redesigned thehome webpage of Heng Thai & Rotisserie, a popular (and personal favorite!) Thai restaurant on college hill. By evaluating the webpage against the following criteria of usability, learnability, and memorability as well as with <a href="https://wave.webaim.org/">WebAIM WAVE</a>, a web accessibility evaluation tool, I was able to identify existing problems with the webpage. </p>
+      <p>In response to these problems, I redesigned the webpage with lo-fi prototypes, high-fi prototypes, and a visual design style guide, and finally implemented the redesign into a responsive webpage with suitable layouts for the varying mobile, tablet, and desktop screen sizes.</p>
+    </div>
+    <div class="text">
+      <p> Check out my redesign: <a href="https://sprintingsloth420.github.io/CS1300_redesign/"> HOME | hengpvd</a>!</p>
+    </div>
+
+    <!-- <div class="section_header">
+      <h2 >Redesign</h2>
+    </div> -->
+
+
+
+    <div class="section_header">
+      <h2 >Identifying Usability Problems</h2>
+    </div>
+
+    <div class="text">
+      <p>Click <a href="https://www.hengpvd.com/home">HERE</a> to view the original website. </p>
+      <p>This HOME page of the restaurant includes information on hours, how to order and make reservations, contact information, and images to showcase Thai streetfood.</p>
+    </div>
+
+    <div class = "web">
+      <div class="image">
+      <img src = "./asset/website1.jpeg" height="600px">
+      <img src = "./asset/website2.jpeg" height="600px">
+    </div>
+
+    <div class="text" style="font-weight:bold; color:#034f84;">
+      <p style="margin-top:0">Desktop version screenshots</p>
+    </div>
+
+    <div class="list">
+      <p style="text-indent:2.5rem">I have evaluated the webpage against the following criteria:</p>
+      <ul id="list1">
+        <li>Usability</li>
+        <li> <ul class="sublist">
+          <li>The sequence of information is confusing - information on open hours is sandwiched by instructions to make a reservation or make an order</li>
+          <li>Open hours are center aligned, making it difficult to separate weekdays and hours</li>
+          <li>Information about open hours is conveyed in two ways. <br/> The top one says “11.30 pm – 3.00 pm and 4.30 pm – 9.30 pm”, whereas the bottom one (in the VIST US section) says “11.30 AM – 9.30 PM, …, We’re closed for a break from 3.00 – 4.30 PM everyday”. Users might spend some time and mental energy comparing these blocks of information</li>
+          <li>Inconsistency in information - no instruction on how to use "curbside service"</li>
+
+          <li>The purpose of the contact us form is unclear</li>
+        </ul></li>
+        <li>Learnability</li>
+        <li> <ul class="sublist">
+          <li> Poor organization of the top nav bar - menus are not grouped together, and the important contact information is hidden is "MORE"</li>
+          <li>No section title or sub-menus, difficult for users to learn about what information is included on this HOME page</li>
+          <li>The in-page navigation buttons on the right do work, but no indication of which section it links to</li>
+          <li>The label for the first button just says “Online Order” but does not specify what type of order (pick-up or delivery), so users have to click the button to check </li>
+
+        </ul></li>
+        <li>Memorability</li>
+        <li> <ul class="sublist">
+          <li>Repetition in information about open hours, both on the first page and in the VISIT US section at the bottom of the page, makes it difficult for users to remember which section to check for hours</li>
+        </ul></li>
+        <li>Styling</li>
+        <li> <ul class="sublist">
+          <li>The grey block in the center does not align with the background image</li>
+          <li>Two buttons have different formats and do not align </li>
+          <li>Inconsistency in typography – three slogans with three different fonts</li>
+          <li>The footnote takes up a whole page</li>
+        </ul></li>
+        <li>Accessibility - WAVE results</li>
+        <li> <ul class="sublist" style="padding-bottom:0;">
+          <li>Contrast errors from the grey block and the white texts on top. <br/> -> I do not think the contrast is too low, but I would consider using larger font sizes.</li>
+          <li>Contrast errors from the "DELIVERY" button with yellow background and bleu texts. <br/> -> I agree that the contrast is very low, epescially in grayscale.</li>
+          <li> Redudant links from the in-page navigation buttons on the right. <br/> -> I think it is important to have some anchors on one page, but I do agree that these buttons should be labeled with the section on the page that they link to.</li>
+          <li> Good ARIA functionality. <br/> -> I believe that this page was developed with an online template, and I agree that the accessibility functionality is good.</li>
+      </ul>
+    </div>
+
+    </div>
+
+    <div class="section_header">
+      <h2 >Low-fi Prototypes</h2>
+    </div>
+
+    <div class="prototypes">
+      <div class = "pro_sub">
+        <div><img src="./asset/1.jpeg" width=500px style="margin:0px;margin-top:5vh;"></div>
+        <div><img src="./asset/2.jpeg" width=500px style="margin:0px;margin-top:5vh;"></div>
+      </div>
+      <div class="text" style="font-weight:bold; color:#034f84;">
+        <p style="margin-top:0;margin-bottom:3rem">Desktop version</p>
+      </div>
+
+      <div class = "pro_sub">
+        <div><img src="./asset/3.jpeg" width=800px style="margin:0px"></div>
+      </div>
+      <div class="text" style="font-weight:bold; color:#034f84;">
+        <p style="margin-top:0;margin-bottom:3rem">Tablet version</p>
+      </div>
+
+      <div class = "pro_sub">
+        <div><img src="./asset/4.jpeg" width=900px style="margin:0px"></div>
+      </div>
+      <div class="text" style="font-weight:bold; color:#034f84;">
+        <p style="margin-top:0">Mobile version</p>
+      </div>
+
+    </div>
+
+    <div class="section_header">
+      <h2 >High-fi Prototypes</h2>
+    </div>
+
+    <div class="prototypes">
+      <div class = "pro_sub">
+        <div><img src="./asset/highweb.jpeg" width=1200px style="margin:0px;margin-top:5vh;"></div>
+      </div>
+      <div class="text" style="font-weight:bold; color:#034f84;">
+        <p style="margin-top:0;margin-bottom:3rem">Desktop version <span style="font-weight:normal">(root fontsize: 16px) </span></p>
+      </div>
+
+      <div class = "pro_sub">
+        <div><img src="./asset/hightablet.jpeg" width=1200px style="margin:0px"></div>
+      </div>
+      <div class="text" style="font-weight:bold; color:#034f84;">
+        <p style="margin-top:0;margin-bottom:3rem">Tablet version <span style="font-weight:normal">(root fontsize: 13px) </span></p>
+      </div>
+
+      <div class = "pro_sub">
+        <div><img src="./asset/highphone.jpeg" width=1200px style="margin:0px;margin-bottom:3rem"></div>
+      </div>
+      <div class="text" style="font-weight:bold; color:#034f84;">
+        <p style="margin-top:0">Mobile version <span style="font-weight:normal">(root fontsize: 11px) </span></p>
+      </div>
+
+    </div>
+
+      <div class="section_header">
+        <h2 >Visual Design Style Guide</h2>
+      </div>
+
+      <div class = "pro_sub">
+        <div><img src="./asset/guide.jpeg" width=800px></div>
+      </div>
+
+    <div class="section_header">
+      <h2 style="color:white">Final Redesign</h2>
+    </div>
+<!--
+    <div class="section_header">
+      <h2>Observations</h2>
+    </div>
+
+    <div class="text">
+      <p>I observed 5 users who interacted with the interface and purchased drinks at the machine. Here are some objective observations of user behaviors:</p>
+    </div>
+
+    <div class="text">
+      <ul class="c">
+        <li><b>Common behaviors</b></li>
+        <ul class = "b">
+          <li>Once users approached the machine, they immediately tapped the screen and started interacting with the machine</li>
+          <li>The majority of users observed interacting with the machine with no or very few pauses</li>
+          <li>They were all holding a credit card or a phone for Apple Pay throughout the whole purchase experience</li>
+          <li>The majority of users observed were not paying attention to the machine when the drink was made but instead were on their phones, chatting with friends, or using the nearby vending machines for snacks</li>
+          <li>All users were staring at the cup and walking slowly after getting their cup full of hot coffee</li>
+        </ul>
+
+
+        <li><b>Individual behaviors</b></li>
+        <ul class = "b">
+          <li>User A was looking for something on the counter near the lid holder as well as the cabinets and drawers below</li>
+          <li>User A got their own bottle from the bag, placed it below the pick-up port, and removed their own bottle when the machine started preparing the drink and a paper cup dropped out from the port. They then tried to get the cup out by wiggling it but stopped doing it when there was the sound of liquid dripping</li>
+          <li>User B swiped their credit card several times before the machine recognized their payment</li>
+          <li>User C was holding their own mug in one hand and the paper cup with the drink in the other hand</li>
+          <li>User C said, “it’s so hot.”</li>
+        </ul>
+      </ul>
+    </div>
+
+
+    <div class="section_header">
+      <h2>Interview</h2>
+    </div>
+
+    <div class="text">
+      <p>Out of the 5 users I observed, I conducted interviews with 3 users.</p>
+    </div>
+
+    <div class="text">
+      <ul class="c">
+        <li><b>Questions</b></li>
+        <ol>
+          <li>Are you studying at the library?</li>
+          <li>Do you usually use vending machines? </li>
+          <li>Is this your first time using this coffee vending machine?</li>
+          <li>If yes: Did you experience any difficulty in understanding what to do? If no: How was your first experience like? Did things get easier as you use it more? </li>
+          <li>Why did you choose to use this machine?</li>
+          <li>If there is an open café that is within a 5-minute walk, would you choose to walk and get your drinks there or still use this machine?</li>
+          <li>How was your experience with navigating the screen?</li>
+          <li>How was the payment process?</li>
+          <li>Would you prefer to use your own mug? And why is that?</li>
+          <li>Is there any other comment you’d want to mention about your experience?</li>
+          <li>Would you use this machine again?</li>
+        </ol>
+
+        <li><b>Responses</b></li>
+        <ul class = "b">
+          <li>All interviewees were studying at the library and liked the fact that the machine was right here and would hence keep using the machine in the future, even when nearby cafés are available.</li>
+          <li>All interviewees had experience using other vending machines and generally agreed that navigating on the digital screen was relatively straightforward. Some pointed out there were too many options, which was a bit confusing.</li>
+          <li>All interviewees indicated that they had some trouble understanding how the machine and the interface worked the first time using it. There was no overview of what they needed to do so they had to try things out along the way, e.g. knowing whether the machine would provide cups, or knowing when to pay.</li>
+          <li>All interviewees pointed out that they had some difficulty with the payment process, either with swiping credit cards or using wrinkled bills.</li>
+          <li>All interviewees preferred having the option of using single-use paper cups or their own mugs - mugs are eaiser to carry around and has better heat insulation, whereas cups are for cases when they don't have own mugs with them.</li>
+        </ul>
+      </ul>
+    </div>
+
+    <div class="section_header">
+      <h2>Personas</h2>
+    </div>
+
+    <div class = "sketch">
+      <img src = "./asset/persona1.png" height="400px">
+      <p class = "persona"> <b>Confused Anna</b>, a retired lady who is not very tech-savvy. She enjoys reading at the Rock a lot, and she just finds out about the new coffee vending machine in the lobby and would like a cup of coffee to warm herself up.<br/>
+
+        <br>
+
+        Anna represents the group of users who are not familiar with the machine, possibly because they are first-time users or because they have little experience in using automatic vending machines in general. They are confused about what the whole process is like and what they are supposed to do at each stage. They reflect affordance problems of the interface:<br/>
+        - Lack of an overview of the whole process <br/>
+        - Instructions for each step are scattered around the screen <br/>
+        - No clear instruction on when the payment should be made<br/>
+        - No clear instruction on whether cups will be provided by the machine, and the lids on the counter can mislead users to search for cups on the counter too <br/>
+        <br>
+    </div>
+
+    <div class = "sketch">
+      <p class = "persona"> <b>Grinding Alex</b>, a Brown student concentrating in Psychology. He is pulling an all-nighter for a paper due the next morning and decides to get coffee at 2 am.<br/>
+        <br>
+
+        Alex represents more regular users who have experience using this coffee machine so they have little trouble performing normal interactions. However, users who buy coffee at a library are likely to be mentally tired from academic work (or "grinding"). They hence reflect more nuanced problems that can further improve the usability of the interface once fixed:<br/>
+        - Many options are offered but their differences are not shown<br/>
+        - No way for the users to directly observe how full the cup is unless they pull the cup out <br/>
+
+        <br>
+      </p>
+      <img src = "./asset/persona2.png" height="400px">
+    </div>
+
+    <div class="section_header">
+      <h2>Storyboard</h2>
+    </div>
+
+    <div class = "sketch">
+      <img src = "./asset/storyboard.png" height="800px">
+    </div> -->
+
+
+
+  </body>
+
+</html>
